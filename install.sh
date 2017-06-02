@@ -7,7 +7,7 @@ echo "$PWD"
 touch ~/.profile
 cp ~/.profile $PWD/.profile_backup
 ################ Reboot script ###################
-onReboot="cd $PWD && gnome-terminal -e \"./installSoapySDR.sh\""
+onReboot="cd $PWD && gnome-terminal -e \"./installSoapySDR.sh && ./installGitKraken\""
 ##################################################
 echo "$onReboot && mv $PWD/.profile_backup ~/.profile" >> ~/.profile
 
