@@ -8,3 +8,5 @@ fi
 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 dpkg -i gitkraken-amd64.deb
+
+$SHELL
