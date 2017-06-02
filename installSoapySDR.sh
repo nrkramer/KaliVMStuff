@@ -36,3 +36,5 @@ SoapySDRUtil --info
 
 echo "Done!"
 echo "Now run PothosGui and watch those bits fly!"
+
+$SHELL
