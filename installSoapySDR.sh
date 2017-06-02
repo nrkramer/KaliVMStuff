@@ -6,6 +6,8 @@ if [[ $EUID -ne 0 ]]; then
         exit
 fi
 
+apt install -y -qq dirmngr
+
 cp add-apt-repository.sh.txt /usr/sbin/add-apt-repository
 chmod o+x /usr/sbin/add-apt-repository
 chown root:root /usr/sbin/add-apt-repository
