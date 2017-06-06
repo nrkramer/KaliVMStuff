@@ -2,12 +2,16 @@
 
 ./installVBoxGuestAdditions.sh
 
+apt install -y -qq qtcreator
+apt install -y -qq libreoffice
+
 echo "$PWD"
 # Write Run-Once reboot script (backup .profile)
 touch ~/.profile
 cp ~/.profile $PWD/.profile_backup
 ################ Reboot script ###################
-onReboot="cd $PWD && gnome-terminal -e \"./installSoapySDR.sh && ./installGitKraken\""
+installs="./installSoapySDR & ./installGitKraken"
+onReboot="cd $PWD && gnome-terminal -e \"$installs\""
 ##################################################
 echo "$onReboot && mv $PWD/.profile_backup ~/.profile" >> ~/.profile
 
