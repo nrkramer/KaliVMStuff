@@ -27,7 +27,7 @@ deb-src http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt
 # Update Kali
 echo "-----------------Updating Kali-----------------"
 
-apt update -q && apt -y -q dist-upgrade
+apt update -q && apt -y -q upgrade && apt -y -q dist-upgrade
 
 # Install Kernel Headers
 echo "-----------------Installing kernel headers-----------------"
